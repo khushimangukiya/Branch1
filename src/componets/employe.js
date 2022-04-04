@@ -40,33 +40,36 @@ function Employe() {
     ]
   
     let filterdata = data.filter((d, i) => (d.salary > 22000 && d.bonus > 500))
-  
+    
+    let subtotal = filterdata.reduce((acc,d) => (acc+d.salary))
+
     let total = filterdata.reduce((acc, d) => (acc+d.salary+d.bonus), 0)
   
     console.log(filterdata.length)
   
     return ( 
       <table>
-        <tr>
+          <tr>
               <th> Name </th> 
               <th> Age </th> 
               <th> Salary </th> 
               <th> Bonus </th> 
-              <th> Status </th> 
+              <th> Status </th>
+              <th> Sub Total</th>
               <th> Total </th> 
-            </tr>
-             {
+          </tr>
+        {
         
         filterdata.map((d, i) => {
           return ( 
-          <>
-            
+          <> 
             <tr>
               <td> {d.name}</td>
               <td> {d.age}</td>
               <td> {d.salary}</td>
               <td> {d.bonus}</td> 
               <td> {d.status.toString()}</td> 
+              { i === 0 ? <td>{subtotal}</td> : null }
               { i === 0 ? <td rowspan = {filterdata.length}>{total}</td> : null }
             </tr>
           </>

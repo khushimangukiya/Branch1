@@ -2,7 +2,9 @@ import logo from './logo.svg';
 import './App.css';
 import Employe from './componets/employe';
 import Medicine from './componets/medicine';
-import Medicine_destructure from './componets/medicine_destructhering';
+import MedicinecDestructhering from './componets/MedicinecDestructhering';
+import State from './componets/State';
+import City from './componets/City';
 
 
 
@@ -14,7 +16,9 @@ function App() {
     <div>
       <Employe/>
       <Medicine/>
-      <Medicine_destructure/>
+      <State/>
+      <MedicinecDestructhering/>
+      <City/>
     </div>
   );
 }

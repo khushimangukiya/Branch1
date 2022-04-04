@@ -1,6 +1,6 @@
 import React from 'react';
 
-function Medicine_destructure() {
+function MedicinecDestructhering() {
     let medicine_data =[ 
         {
             id: 101,
@@ -73,7 +73,7 @@ function Medicine_destructure() {
               <td> {quantity}</td>
               <td> {price}</td>
               <td> {expiry}</td> 
-              <td> {status.toString()}</td> 
+              {/* <td key={status.toString()}>{status}</td> */}
               { i === 0 ? <td rowspan = {filter_data.length}>{total}</td> : null }
             </tr>
           </>
@@ -84,4 +84,4 @@ function Medicine_destructure() {
     );
   }
 
-    export default Medicine_destructure;
+    export default MedicinecDestructhering;
