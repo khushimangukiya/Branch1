@@ -53,6 +53,9 @@ function Medicine() {
     return ( 
       <table>
         <tr>
+          <h2>Mediacine Data Use Filter Reduce</h2>
+        </tr>
+        <tr>
               <th> Name </th> 
               <th> Quantity </th> 
               <th> Price </th> 

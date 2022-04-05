@@ -5,6 +5,8 @@ import Medicine from './componets/medicine';
 import MedicinecDestructhering from './componets/MedicinecDestructhering';
 import State from './componets/State';
 import City from './componets/City';
+import StateFun from './componets/StateFun';
+import EmployeDes from './componets/EmployDes';
 
 
 
@@ -15,10 +17,12 @@ function App() {
   return ( 
     <div>
       <Employe/>
+      <EmployeDes/>
       <Medicine/>
-      <State/>
       <MedicinecDestructhering/>
+      <State/>
       <City/>
+      <StateFun/>
     </div>
   );
 }
