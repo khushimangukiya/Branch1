@@ -7,6 +7,7 @@ import State from './componets/State';
 import City from './componets/City';
 import StateFun from './componets/StateFun';
 import EmployeDes from './componets/EmployDes';
+import Counter from './componets/Counter';
 
 
 
@@ -16,13 +17,14 @@ function App() {
 
   return ( 
     <div>
-      <Employe/>
-      <EmployeDes/>
-      <Medicine/>
-      <MedicinecDestructhering/>
+      {/* <Employe/> */}
+      {/* <EmployeDes/> */}
+      {/* <Medicine/> */}
+      {/* <MedicinecDestructhering/> */}
       <State/>
-      <City/>
-      <StateFun/>
+      {/* <City/> */}
+      {/* <StateFun/> */}
+      {/* <Counter/> */}
     </div>
   );
 }
