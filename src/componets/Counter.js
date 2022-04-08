@@ -5,11 +5,15 @@ function Counter(props) {
     const [count, steCounter] = useState(0)
 
     const incrementcounter = () =>{
-        steCounter(() => count+1);
-    }
+        if( count < 30) {
+            steCounter(() => count+1);
+            }
+        }
     
     const decrementcounter = () =>{
-        steCounter(() => count-1);
+        if(count > 0){
+            steCounter(() => count-1);
+        }
     }
 
     return (
