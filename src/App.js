@@ -11,6 +11,7 @@ import Counter from './componets/Counter';
 import CityFun from './componets/CityFun';
 import Clock from './componets/Clock';
 import ClockFun from './componets/ClockFun';
+import Main from './componets/Main';
 
 
 
@@ -20,17 +21,7 @@ function App() {
 
   return ( 
     <div>
-      {/* <Employe/> */}
-      {/* <EmployeDes/> */}
-      {/* <Medicine/> */}
-      {/* <MedicinecDestructhering/> */}
-      {/* <State/> */}
-      {/* <City/> */}
-      {/* <StateFun/> */}
-      {/* < CityFun/> */}
-      {/* <Counter/> */}
-      {/* <Clock/> */}
-      <ClockFun/>
+      <Main/>
     </div>
   );
 }
