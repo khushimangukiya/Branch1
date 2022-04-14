@@ -1,15 +1,22 @@
 import React from 'react';
 
-function Loding(componet) {
+function Loding(Component) {
 
     return function withLoadingComponent({ isLoading, data }) {
         if (isLoading) {
             return (
-                <p>Loading</p>
+                <div className='loader_main'>
+                <div className='loading-container'>
+                    <div className='item'></div>
+                    <div className='item'></div>
+                    <div className='item'></div>
+                    <div className='item'></div>
+                </div>
+                </div>
             )
         } else {
             return (
-                <componet data={data} />
+                <Component data={data} />
             );
         }
     }
